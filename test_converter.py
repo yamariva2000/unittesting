@@ -45,3 +45,6 @@ class TestConverter(unittest.TestCase):
 
         [self.assertEqual(convert(*inputs), correct_answer, msg='function output not matching test value ') for
          inputs, correct_answer in correct_answers]
+
+if __name__ == '__main__':
+    unittest.main()
