@@ -43,7 +43,7 @@ class TestConverter(unittest.TestCase):
             ((10, 'to_acres'), 6399.969999999999),
             ((26.0, 'to_acres'), 16639.922)]
 
-        [self.assertEqual(convert(*inputs), correct_answer, msg='function output not matching test value ') for
+        [self.assertEqual(convert(*inputs), correct_answer, msg='function output not matching test value.  function with parameters {} returned {} instead of {}'.format(inputs,convert(*inputs),correct_answer)) for
          inputs, correct_answer in correct_answers]
 
 if __name__ == '__main__':
